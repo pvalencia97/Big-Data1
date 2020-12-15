@@ -1,0 +1,19 @@
+datos <- data.frame("Peso" = c(56,69,68,48,84,90,100,
+                               78,48,95,99,85,65,58,
+                               48,79,88,91,61,20),
+                    "Altura" =c(158,198,158,169,148,157,197,
+                                169,175,184,198,174,164,158,
+                                135,158,149,167,184,194),
+                    "Sexo" =c("HOMBRE","HOMBRE","HOMBRE","MUJER","MUJER",
+                              "HOMBRE","MUJER","HOMBRE","MUJER","MUJER",
+                              "MUJER","MUJER","HOMBRE","MUJER","MUJER",
+                              "HOMBRE","HOMBRE","HOMBRE","HOMBRE","MUJER"),
+                    "IMC"=c(20.65,21.65,21.78,25.14,26.89,26.48,
+                            26.66,25.98,21.21,26.23,27.15,29.20,
+                            29.99,24.25,23.20,24.56,26.21,22.20,
+                            27.71,27.65))
+row.names(datos) <- c("N1","N2","N3","N4","N5","N6","N7",
+                      "N8","N9","N10","N11","12","N13","N14",
+                      "N15","N16","N17","N18","N19","N20")
+datos
+hist(datos$Altura, xlab = "Altura (cm)",main = "Altura",col = c("red","blue","gray","black","pink") )

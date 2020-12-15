@@ -1,0 +1,12 @@
+edad <- c(23,25,26,24,21,19,20,22,26,25)
+anac <- c(1997,1995,1994,1996,1999,2001,2000,1998,1994,1995)
+tel <- c(1542541452,1265256541,1254141578,9685326589,1425625415,1524521456,
+         1525474541,6859745854,2695745235,1425142545)
+matriz <- cbind(edad,anac,tel)
+prom = prom = apply(matriz,2,mean)
+matriz =rbind(matriz,"promedio" =prom)
+dimnames(matriz)[[1]] <- c("Jose","Juan",
+                           "Valentina","Melissa",
+                           "Erica","Ofelia",
+                           "Manuel","Elvira",
+                           "Alejandra","Danae","PROMEDIO")

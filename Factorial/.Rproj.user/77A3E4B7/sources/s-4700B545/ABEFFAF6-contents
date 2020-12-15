@@ -1,0 +1,22 @@
+for (x in 1:(v-1)){
+  if (v == 0)
+    break
+  v <- v* x
+}
+print(v)
+print (Sys.time()-iniciar)
+
+iniciar<- Sys.time()
+v <-6
+x <-v
+
+while (x>0){
+  v <-v* x
+  x <-x -1
+}
+print(v)
+print(Sys.time()-iniciar)
+
+iniciar <-Sys.time()
+factorial(6)
+print (Sys.time()-iniciar)
